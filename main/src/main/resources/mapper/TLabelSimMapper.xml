@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.bistu.main.mapper.TLabelSimMapper">
+
+    <resultMap id="BaseResultMap" type="cn.bistu.main.domain.TLabelSim">
+            <id property="labelId" column="label_id" jdbcType="VARCHAR"/>
+            <result property="labelName" column="label_name" jdbcType="VARCHAR"/>
+            <result property="labelClassfy" column="label_classfy" jdbcType="VARCHAR"/>
+            <result property="labelLevel" column="label_level" jdbcType="VARCHAR"/>
+            <result property="fatherId" column="father_id" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        label_id,label_name,label_classfy,
+        label_level,father_id
+    </sql>
+</mapper>

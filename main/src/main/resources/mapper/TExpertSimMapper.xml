@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.bistu.main.mapper.TExpertSimMapper">
+
+    <resultMap id="BaseResultMap" type="cn.bistu.main.domain.TExpertSim">
+            <id property="expertId" column="expert_id" jdbcType="INTEGER"/>
+            <result property="nameCh" column="name_ch" jdbcType="VARCHAR"/>
+            <result property="mail" column="mail" jdbcType="VARCHAR"/>
+            <result property="title" column="title" jdbcType="VARCHAR"/>
+            <result property="degree" column="degree" jdbcType="VARCHAR"/>
+            <result property="officePhone" column="office_phone" jdbcType="VARCHAR"/>
+            <result property="profession" column="profession" jdbcType="VARCHAR"/>
+            <result property="research" column="research" jdbcType="VARCHAR"/>
+            <result property="socialService" column="social_service" jdbcType="VARCHAR"/>
+            <result property="graduated" column="graduated" jdbcType="VARCHAR"/>
+            <result property="sex" column="sex" jdbcType="VARCHAR"/>
+            <result property="birthDateOld" column="birth_date_old" jdbcType="VARCHAR"/>
+            <result property="nationality" column="nationality" jdbcType="VARCHAR"/>
+            <result property="career" column="career" jdbcType="VARCHAR"/>
+            <result property="people" column="people" jdbcType="VARCHAR"/>
+            <result property="birthPlace" column="birth_place" jdbcType="VARCHAR"/>
+            <result property="achievement" column="achievement" jdbcType="VARCHAR"/>
+            <result property="unit" column="unit" jdbcType="VARCHAR"/>
+            <result property="department" column="department" jdbcType="VARCHAR"/>
+            <result property="location" column="location" jdbcType="VARCHAR"/>
+            <result property="label" column="label" jdbcType="VARCHAR"/>
+            <result property="addDate" column="add_date" jdbcType="BIGINT"/>
+            <result property="party" column="party" jdbcType="VARCHAR"/>
+            <result property="paper" column="paper" jdbcType="VARCHAR"/>
+            <result property="course" column="course" jdbcType="VARCHAR"/>
+            <result property="patent" column="patent" jdbcType="VARCHAR"/>
+            <result property="fund" column="fund" jdbcType="VARCHAR"/>
+            <result property="workExperience" column="work_experience" jdbcType="VARCHAR"/>
+            <result property="nationalProject" column="national_project" jdbcType="VARCHAR"/>
+            <result property="updateDate" column="update_date" jdbcType="BIGINT"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        expert_id,name_ch,mail,
+        title,degree,office_phone,
+        profession,research,social_service,
+        graduated,sex,birth_date_old,
+        nationality,career,people,
+        birth_place,achievement,unit,
+        department,location,label,
+        add_date,party,paper,
+        course,patent,fund,
+        work_experience,national_project,update_date
+    </sql>
+</mapper>
